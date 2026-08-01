@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy GF Day ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="petals"></div>
+
+<!-- Loading Screen -->
+<div id="loader">
+
+    <div class="heart">❤️</div>
+
+    <h1>For Someone Very Special...</h1>
+
+    <p>Preparing a little surprise...</p>
+
+    <div class="loading-bar">
+        <div class="loading-fill"></div>
+    </div>
+
+</div>
+
+<div id="website" style="display:none;">
+<!-- ================= HERO ================= -->
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="overlay"></div>
+
+    <div class="floating-hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>🌸</span>
+        <span>❤️</span>
+        <span>💖</span>
+    </div>
+
+    <!-- Welcome Screen -->
+    <div id="welcomeScreen" class="screen active">
+
+        <h3>Hi Pengu ❤️</h3>
+
+        <h1 id="typewriter"></h1>
+
+        <p>
+            I made something only for you...
+        </p>
+
+        <button onclick="nextScreen()">
+            Continue ❤️
+        </button>
+
+    </div>
+
+    <!-- Proposal Screen -->
+
+    <div id="proposalScreen" class="screen">
+
+        <h3>Pengu...</h3>
+
+        <h2>
+
+            Since you came into my life,
+
+            every ordinary day became special.
+
+        </h2>
+
+        <p>
+
+            You became my favorite notification.
+
+            My safest place.
+
+            My biggest smile.
+
+            My favorite person.
+
+        </p>
+
+        <h1 class="proposal">
+
+            Will you be the love of my life?
+
+        </h1>
+
+        <div class="buttons">
+
+            <button onclick="yesClicked()">
+
+                Yes, Kuchu Puchu ❤️
+
+            </button>
+
+            <button onclick="yesClicked()">
+
+                Absolutely ❤️
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- Celebration -->
+
+    <div id="celebrationScreen" class="screen">
+
+        <h1>❤️</h1>
+
+        <h2>
+
+            Thank you...
+
+        </h2>
+
+        <p>
+
+            Now let me show you
+
+            why you're so special to me.
+
+        </p>
+
+        <button onclick="scrollToStory()">
+
+            Our Story ↓
+
+        </button>
+
+    </div>
+
+    <canvas id="confetti"></canvas>
+
+    <audio id="music" loop>
+        <source src="music/song.mp3" type="audio/mpeg">
+    </audio>
+
+</section>
+
+<!-- ================= LOVE COUNTER ================= -->
+
+<section class="counter">
+
+    <h2>Every Second With You ❤️</h2>
+
+    <div class="counter-box">
+
+        <div class="time-card">
+            <span id="days">0</span>
+            <p>Days</p>
+        </div>
+
+        <div class="time-card">
+            <span id="hours">0</span>
+            <p>Hours</p>
+        </div>
+
+        <div class="time-card">
+            <span id="minutes">0</span>
+            <p>Minutes</p>
+        </div>
+
+        <div class="time-card">
+            <span id="seconds">0</span>
+            <p>Seconds</p>
+        </div>
+
+    </div>
+
+</section>
+<!-- ================= TIMELINE ================= -->
+
+<section id="story" class="timeline">
+
+    <h2>Our Journey ❤️</h2>
+
+    <div class="timeline-container">
+
+        <div class="timeline-item left">
+            <div class="content">
+                <h3>🌸 The Beginning</h3>
+                <p>
+                    The day everything started. I didn't know it then,
+                    but my favorite person had just walked into my life.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content">
+                <h3>💬 Endless Conversations</h3>
+                <p>
+                    Somehow every conversation with you became the best part of my day.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item left">
+            <div class="content">
+                <h3>📸 Our Memories</h3>
+                <p>
+                    Every picture below reminds me that happiness isn't a place,
+                    it's being with you.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item right">
+            <div class="content">
+                <h3>❤️ Today</h3>
+                <p>
+                    And today... I'm still choosing you.
+                    Every single day.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= PHOTO GALLERY ================= -->
+
+<section class="gallery">
+
+<h2>Our Beautiful Memories 📸</h2>
+
+<div class="gallery-grid">
+
+<img src="images/photo1.jpg" onclick="openImage(this)">
+<img src="images/photo2.jpg" onclick="openImage(this)">
+<img src="images/photo3.jpg" onclick="openImage(this)">
+<img src="images/photo4.jpg" onclick="openImage(this)">
+<img src="images/photo5.jpg" onclick="openImage(this)">
+<img src="images/photo6.jpg" onclick="openImage(this)">
+<img src="images/photo7.jpg" onclick="openImage(this)">
+<img src="images/photo8.jpg" onclick="openImage(this)">
+<img src="images/photo9.jpg" onclick="openImage(this)">
+<img src="images/photo10.jpg" onclick="openImage(this)">
+
+</div>
+
+</section>
+
+<div id="lightbox" onclick="closeImage()">
+    <img id="lightboxImg">
+</div>
+
+<!-- ================= LOVE LETTER ================= -->
+
+<section class="love-letter">
+
+<h2>A Letter Just For You 💌</h2>
+
+<div class="letter-card">
+
+<p>
+
+Dear Mommy ❤️,
+
+</p>
+
+<p>
+
+I never imagined someone could become such an important part of my life so naturally.
+
+You made ordinary days exciting, simple conversations unforgettable, and little moments feel like memories worth keeping forever.
+
+</p>
+
+<p>
+
+Thank you for every smile, every laugh, every moment you've shared with me.
+
+No matter where life takes us, I hope we keep making beautiful memories together.
+
+</p>
+
+<p>
+
+Love,
+
+<br><br>
+
+<b>Kuchu Puchu ❤️</b>
+
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= REASON ================= -->
+
+<section class="reason">
+
+<h2>1 Reason I Love You ❤️</h2>
+
+<div class="reason-box">
+
+<p id="reasonText">
+
+Click below to reveal one ❤️
+
+</p>
+
+<button onclick="newReason()">
+
+Reveal ❤️
+
+</button>
+
+</div>
+
+</section>
+
+<!-- ================= FUTURE ================= -->
+
+<section class="future">
+
+<h2>Future Dreams</h2>
+
+<ul>
+
+<li>🌍 Travel together</li>
+<li>☕ Late-night coffee dates</li>
+<li>📸 Make thousands more memories</li>
+<li>💖 Keep choosing each other every day</li>
+
+</ul>
+
+</section>
+
+<!-- ================= END ================= -->
+
+<section class="ending">
+
+<h1>❤️ Forever Starts With You ❤️</h1>
+
+<p>
+
+No matter how many websites I build...
+
+No matter how many memories we make...
+
+I'll always choose you.
+
+Again.
+
+And again.
+
+And again.
+
+</p>
+
+<h2>
+
+Will you keep making memories with me?
+
+🌸❤️🌸
+
+</h2>
+
+</section>
+
+<script src="script.js"></script>
+
+</div>
+
+
+</body>
+</html>
